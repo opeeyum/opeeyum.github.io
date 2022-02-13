@@ -31,7 +31,7 @@ github_username:  opeeyum
 instagram_username: learning_too_code
 
 # Build settings
-theme: minima
+theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 
