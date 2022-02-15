@@ -43,12 +43,12 @@
         }
     </style>
 </head>
-<body>
+<body onload="load()">
     <div id="container">
         <nav class="navbar sticky-top bg-dark mb-3 border-bottom border-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ site.url }}">
-                    <img src="{{ site.baseurl }}/images/opLogo.png" alt="" width="50" class="d-inline-block align-text-center">
+                    <img src="{{ site.baseurl }}/images/logos/opLogo.png" alt="" width="50" class="d-inline-block align-text-center">
                     Bootstrap
                 </a>
                 <ul class="nav justify-content-end">
@@ -69,17 +69,17 @@
             <h3>Posts</h3>
             {% for tag in site.categories %}
             <section id="{{ tag[0] }}">
+                {% for post in tag[1] %}
                 <div class="border border-dark border-2 rounded-2 mb-2">
-                <ul >
-                    {% for post in tag[1] %}
+                <ul >                    
                     <li><p>{{ post.date | date: "%b %d, %Y" }}</p></li>
                     <p>{{ post.excerpt }}</p>
-                    <li><a href="{{ post.url }}">Read more...</a></li>                      
-                    {% endfor %}
+                    <li><a href="{{ post.url }}">Read more...</a></li>                    
                 </ul>
             </div>
-            {% endfor %} 
+             {% endfor %}
             </section>
+            {% endfor %}
                        
         </div>
 
@@ -89,6 +89,8 @@
     </div>
 </body>
 <script>
-    alert("hello");
+    var shiftWindow = function() { scrollBy(0, -50) };
+    window.addEventListener("hashchange", shiftWindow);
+    function load() { if (window.location.hash) shiftWindow(); }
 </script>
 </html>
