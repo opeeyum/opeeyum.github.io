@@ -2,6 +2,8 @@
 title: About
 permalink: /about/
 
+btn: [Academics, Skills, Projects]
+
 academics:
   - name: Graduation
     major: BTech. Computer Science and Engineering
@@ -11,11 +13,7 @@ academics:
     major: Maths
     session: 2017-2018
     cgpa: 8.42
-skills:
-  - Python
-  - C++
-  - C
-  - SQL
+skills: [Python, C++, C, SQL]
 projects: 
   - Vision based human action detection.
   - Voice assistant for Windows-OS.
@@ -33,55 +31,110 @@ projects:
     <style>
         a:link {text-decoration: none;}
         a:hover {text-decoration: none;}
+        html body{
+            overflow-x: hidden;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url("{{ site.baseurl }}/images/postBackground.jpg");
+        }
+        #header{
+            margin-bottom: 10px;
+        }
+        #container{
+            height: 100%;
+            position: relative;
+        }
+        #content{
+            padding-bottom: 30px;
+        }
+        #footer{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 30px;
+            background: brown;
+            color: #2196F3;
+        }
+        a{
+            padding: 2px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #2196F3;
+            display: block;
+        }
+        #selectBox{
+            color: whitesmoke;
+            font-size: 20px;
+            padding: 2px;
+            border-radius: 5px;
+
+        }
     </style>
 </head>
 <body>
-    <div class="container-fluid" style="margin: 5px;">
-        <div class= "row align-items-center" style="background-color: black; color: white;">
-            <div class="col-3">
-                <img src="{{site.baseurl}}/images/opLogo.png" alt="Logo Not Found." width="250">
+    <div id="container">
+        <nav class="navbar navbar-dark bg-dark mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="{{ site.url }}">
+                    <img src="{{ site.baseurl }}/images/opLogo.png" alt="" width="50" class="d-inline-block align-text-center">
+                    Bootstrap
+                </a>
+                <ul class="nav justify-content-end">
+                    <li class="navbar-brand">
+                        <select name="" id="selectBox" style="width: 200px" class="bg-dark" onchange="location = this.value;">
+                            <option value="" selected> Categories</option>
+                            {% for tag in site.categories %}
+                            <option value="{{ site.url }}/#{{ tag[0] }}">{{ tag[0] | capitalize }}</option>
+                            {% endfor %}
+                        </select>
+                    </li>
+                    <li class="navbar-brand"><a href="{{ site.url }}/about">About</a></li>                      
+                </ul>
+                
             </div>
-            <div class="col justify-content-md-right">
+        </nav>
+
+        <div id="content" class="container">
+            <div class="bg-light m-2 p-2">
                 <h2>Hey, this is Omprakash!</h2>
                 <p>Welcome to my online home.<br> This is my personal website.<br> I have created this in order to connect and share my work with geekmates.</p>
             </div>
-        </div> 
-    </div>
-    <div class="container">
-        <div>
-            <button type="button" class="btn btn-info"><a href="#academics">Academics</a> </button>
-            <button type="button" class="btn btn-info"><a href="#skills">Skills</a></button>
-            <button type="button" class="btn btn-info"><a href="#projects">Projects</a></button>
-        </div> 
-        
-        <div id="academics">
-            <h2>Academics</h2>
-            <ul>
-                {% for items in page.academics%}
-                <li><h4>{{ items.name }}: {{ items.major}}</h4></li>
-                <p>Session: {{ items.session}}, CGPA: {{items.cgpa}}</p>
+            <div class="d-flex justify-content-around">
+                {% for item in page.btn%}
+                <button type="button" class="btn btn-warning"><a href="#{{item}}">{{item}}</a> </button>
                 {% endfor %}
-            </ul>
-        </div>  
-        <div id="skills">
-            <h2>Skills</h2>
-            <ul>
-                {% for item in page.skills %}
-                <li>{{item}}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <div id="projects">
-            <h2>Projects</h2>
-            <ul>
-                {% for item in page.projects %}
-                <li>{{item}}</li>
-                {% endfor %}
-            </ul>
-        </div>
-        <h2>{{site.email}}</h2>
+            </div> 
+            {% for block in page.btn %}
+            <div id="{{ block }}" class="bg-light m-2 p-2">
+                <h2>{{ block }} </h2>
+                <ul>
+                    {% if block == "Academics" %}
+                    {% for items in page.academics %}
+                    <li><h4>{{ items.name }}: {{ items.major}}</h4></li>
+                    <p>Session: {{ items.session}}, CGPA: {{items.cgpa}}</p>
+                    {% endfor %}
 
+                    {% else if block == "Skills" %}
+                    {% for item in page.skills %}
+                    <li>{{item}}</li>
+                    {% endfor %}
+
+                    {% else if block == "Projects" %}
+                    {% for item in page.projects %}
+                    <li>{{item}}</li>
+                    {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div id="footer">
+            <div class="container text-center">{{ site.description }}</div>           
+        </div>
     </div>
-    
 </body>
 </html>

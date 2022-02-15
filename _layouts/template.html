@@ -16,9 +16,6 @@
         body{
             background: url("{{ site.baseurl }}/images/postBackground.jpg");
         }
-        #header{
-            margin-bottom: 10px;
-        }
         #container{
             height: 100%;
             position: relative;
@@ -41,7 +38,7 @@
             background: #eee;
             overflow-x: hidden;
             overflow-y: hidden;
-            padding: 5px, 0;
+            padding: 2px;
             border-radius: 5px;
         }
         a{
@@ -81,15 +78,16 @@
         <nav class="navbar sticky-top navbar-dark bg-dark mb-3">
             <div class="container">
                 <a class="navbar-brand" href="{{ site.url }}">
-                    <img src="{{ site.baseurl }}/images/opLogo.png" alt="" width="30" class="d-inline-block align-text-center">
+                    <img src="{{ site.baseurl }}/images/opLogo.png" alt="" width="50" class="d-inline-block align-text-center">
                     Bootstrap
                 </a>
                 <ul class="nav justify-content-end">
                     <li class="navbar-brand">
-                        <select name="" id="selectBox" style="width: 200px" class="bg-dark">
-                            <option value=""> Python</option>
-                            <option value=""> C | C++</option>
-                            <option value=""> CSE Subjects</option>
+                        <select name="" id="selectBox" style="width: 200px" class="bg-dark" onchange="location = this.value;">
+                            <option value="" selected> Categories</option>
+                            {% for tag in site.categories %}
+                            <option value="{{ site.url }}/#{{ tag[0] }}">{{ tag[0] | capitalize }}</option>
+                            {% endfor %}
                         </select>
                     </li>
                     <li class="navbar-brand"><a href="{{ site.url }}/about">About</a></li>                      
@@ -100,9 +98,13 @@
 
         <div id="content">
             <div id="sidenav">
-                {% for item in page.sidebar %}
-                <a href="#{{ item.key }}">{{ item.name }}</a>
+                <h6 style="text-align: center;"><u>Table of Content</u></h6>
+                <ul>
+                    {% for item in page.sidebar %}
+                    <li><a href="#{{ item.key }}">{{ item.name }}</a></li>
                 {% endfor %}
+                </ul>
+                
             </div>
               
             <div id="main" class="bg-light">
@@ -112,12 +114,7 @@
         </div>
 
         <div id="footer">
-            <div class="container">
-                <div class="row ">
-                    <div class="col">{{ site.github_username }}</div>
-                    <div class="col">{{ site.description }}</div>
-                </div>
-            </div>            
+            <div class="container text-center">{{ site.description }}</div>           
         </div>
 
     </div>
