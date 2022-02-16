@@ -45,7 +45,7 @@
 </head>
 <body onload="load()">
     <div id="container">
-        <nav class="navbar sticky-top bg-dark mb-3 border-bottom border-dark">
+        <nav class="navbar bg-dark mb-3 border-bottom border-dark">
             <div class="container">
                 <a class="navbar-brand" href="{{ site.url }}">
                     <img src="{{ site.baseurl }}/images/logos/opLogo.png" alt="" width="50" class="d-inline-block align-text-center">
@@ -84,7 +84,7 @@
         </div>
 
         <div id="footer" >
-            <div class="container text-center">{{ site.description }}</div>           
+            <div class="container text-center"><a href="{{ site.url }}">{{ site.description }}</a></div>           
         </div>
     </div>
 </body>
