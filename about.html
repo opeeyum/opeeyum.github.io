@@ -2,22 +2,6 @@
 title: About
 permalink: /about/
 
-btn: [Academics, Skills, Projects]
-
-academics:
-  - name: Graduation
-    major: BTech. Computer Science and Engineering
-    session: 2018-2022
-    cgpa: 8.61
-  - name: High School
-    major: Maths
-    session: 2017-2018
-    cgpa: 8.42
-skills: [Python, C++, C, SQL]
-projects: 
-  - Vision based human action detection.
-  - Voice assistant for Windows-OS.
-  - A command line utility for managing task(s).
 ---
 
 <!DOCTYPE html>
@@ -38,7 +22,7 @@ projects:
             padding: 0;
         }
         body{
-            background: url("{{ site.baseurl }}/images/postBackground.jpg");
+            background: url("{{ site.baseurl }}/images/logos/postBackground.jpg");
         }
         #header{
             margin-bottom: 10px;
@@ -98,38 +82,37 @@ projects:
         </nav>
 
         <div id="content" class="container">
-            <div class="bg-light m-2 p-2">
+            <div class="bg-light rounded-3 m-2 p-2">
                 <h2>Hey, this is Omprakash!</h2>
-                <p>Welcome to my online home.<br> This is my personal website.<br> I have created this in order to connect and share my work with geekmates.</p>
-            </div>
-            <div class="d-flex justify-content-around">
-                {% for item in page.btn%}
-                <button type="button" class="btn btn-warning"><a href="#{{item}}">{{item}}</a> </button>
-                {% endfor %}
-            </div> 
-            {% for block in page.btn %}
-            <div id="{{ block }}" class="bg-light m-2 p-2">
-                <h2>{{ block }} </h2>
+                <p>Welcome to my online home. This is my personal website. I have created this in order to share my work.</p>
+                <p>I have done internship for role of content creator for an firm. And decided to continue with my writing skill.</p>
+            </div>             
+            <div class="bg-light rounded-3 m-2 p-2">
                 <ul>
-                    {% if block == "Academics" %}
-                    {% for items in page.academics %}
-                    <li><h4>{{ items.name }}: {{ items.major}}</h4></li>
-                    <p>Session: {{ items.session}}, CGPA: {{items.cgpa}}</p>
-                    {% endfor %}
-
-                    {% else if block == "Skills" %}
-                    {% for item in page.skills %}
-                    <li>{{item}}</li>
-                    {% endfor %}
-
-                    {% else if block == "Projects" %}
-                    {% for item in page.projects %}
-                    <li>{{item}}</li>
-                    {% endfor %}
-                    {% endif %}
+                    <li>This website - OP Bootstrap is bulid using a staic site generator Jekyll.</li>
+                    <li>Jekyll is Written in  Ruby.</li>
+                    <li>Jekyll renders Markdown or Textile and Liquid templates, and produces a complete static website.</li>
+                    <li>Jekyll does not use databases to generate the pages dynamically.</li>
+                    <strong markdown="1">And most importantly, Why I have used jekyll is because - Jekyll is the engine behind GitHub Pages, 
+                a GitHub feature that allows users to host websites based on their GitHub repositories for no additional cost. </strong>
                 </ul>
             </div>
-            {% endfor %}
+            <div class="bg-light rounded-3 m-2 p-2">
+                <ul>
+                    <strong>If you like my work and have any suggestion, get connected to me.</strong>
+                    <li>Email: {{ site.email }}</li>
+                    <li>Instagram: {{ site.instagram_username }}</li>
+                    <li>Twitter: {{site.twitter_username }}</li>
+                </ul>
+            </div>
+            <div class="bg-light rounded-3 m-2 p-2">
+                <ul>
+                    <strong>If you like my work and have any suggestion, get connected to me.</strong>
+                    <li>Email: {{ site.email }}</li>
+                    <li>Instagram: {{ site.instagram_username }}</li>
+                    <li>Twitter: {{site.twitter_username }}</li>
+                </ul>
+            </div>
         </div>
 
         <div id="footer">
