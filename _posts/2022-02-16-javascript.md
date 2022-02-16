@@ -36,7 +36,13 @@ sidebar:
 /* Multiline comment like C or CPP */
 ```
 </div>
- 
+
+### Get Input
+<div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+```
+prompt("Enter sth: ");
+```
+</div>
 ### Display Output
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 ```
@@ -144,8 +150,8 @@ function myFunc(para1, para2)
 - A string with no numeric value is converts to NaN (Not a Number), which returns false.
 
 ### What is `===` in JavaScript?
-- `===` - **Triple equals**, is a STRICT EQUALITY comparison operator in JavaScript, which returns false for the values which are not of a similar type. 
-- This operator performs type casting for equality. 
+- `===` - **Triple equals**, is a **Strict Equality** comparison operator in JavaScript, which returns false for the values which are not of a similar type. 
+- This operator ***does not*** performs type casting for equality. 
 - If we compare 2 with “2” using ===, then it will return a false value.
 
 ### If Else in JS
