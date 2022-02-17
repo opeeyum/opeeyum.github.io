@@ -87,12 +87,15 @@ let ourName = "Limited Scope";
   Using `let` enables us **not to** override any variable within a **given scope**. 
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 ```
-let var_1 = "op";
-let var_1 = "lol";
+{
+  let var_1 = "op";
+  let var_1 = "lol";
+}
+
 ```
 </div>
 
-  It will raise an error, because we are trying to override the `var_1`, have local scope.
+  It will raise an error, because we are trying to override the `var_1`, within local scope.
 
 `NOTE: Variable declared with **var"** and **let** can have global or local scope.`
 

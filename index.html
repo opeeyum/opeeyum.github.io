@@ -61,7 +61,7 @@
             <h1>Welcome to OP Bootstrap!</h1>
             <div class="d-flex justify-content-around">
             {% for tag in site.categories %}
-            <button type="button" class="btn btn-warning"><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a></button>
+            <button class="btn btn-warning" onClick="document.getElementById('{{ tag[0] }}').scrollIntoView();">{{ tag[0] | capitalize }}</button>
             {% endfor %}
             </div>
             
