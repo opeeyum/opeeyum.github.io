@@ -86,7 +86,7 @@
                         <select name="" id="selectBox" style="width: 200px" class="bg-dark" onchange="location = this.value;">
                             <option value="" selected> Categories</option>
                             {% for tag in site.categories %}
-                            <option value="{{ site.url }}/{{ tag[0] }}">{{ tag[0] | capitalize }}</option>
+                            <option value="{{ site.url }}#{{ tag[0] }}">{{ tag[0] | capitalize }}</option>
                             {% endfor %}
                         </select>
                     </li>
