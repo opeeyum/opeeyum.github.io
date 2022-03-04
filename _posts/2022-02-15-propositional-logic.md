@@ -61,7 +61,7 @@ A statement or a propsoition is said to be satisfiable if its truth table has **
 
 Collection of Premises on the basis of which we derive a conclusion is termed as Argument.
 
-<img src="{{ site.baseurl }}/images/propositional_logic/argurement_discrete.png" alt="" width="400"/>
+<img src="{{ site.baseurl }}/images/propositional_logic/argurement_discrete.png" class="img-fluid mx-auto d-block" alt="" width="400"/>
 
 ### Connectors / Operators
 
@@ -308,8 +308,8 @@ There are two types of quantifiers:
 
 ### Some Properties of Quantifiers
 
-<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_equivalence.jpg" class="img-fluid" alt="" width="400"/>
+<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_equivalence.jpg" class="img-fluid mx-auto d-block" alt="" width="400"/>
 
-<img src="{{ site.baseurl }}/images/propositional_logic/qunatifiers_equivalence2.jpg" class="img-fluid" alt="" width="400"/>
+<img src="{{ site.baseurl }}/images/propositional_logic/qunatifiers_equivalence2.jpg" class="img-fluid mx-auto d-block" alt="" width="400"/>
 
-<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_negation.jpg" class="img-fluid" alt="" width="400"/>
+<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_negation.jpg" class="img-fluid mx-auto d-block" alt="" width="400"/>

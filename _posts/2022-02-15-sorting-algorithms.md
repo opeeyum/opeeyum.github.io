@@ -104,7 +104,7 @@ Time complexity: **o(n\*logn) -- For Best, Average and worst case.**
 
 Space complexity: **o(n)**
 
- <img src="{{ site.baseurl }}/images/sorting/merge_sort_image.png" class="img-fluid" alt="" width="400"/>
+ <img src="{{ site.baseurl }}/images/sorting/merge_sort_image.png" class="img-fluid mx-auto d-block" alt="" width="400"/>
  
 ``Preferred to used when order of incoming (intial ordering) elements is unknown.``
  
