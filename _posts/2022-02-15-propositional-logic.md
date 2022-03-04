@@ -308,7 +308,7 @@ There are two types of quantifiers:
 
 ### Some Properties of Quantifiers
 
-<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_equivalence.jpg" alt="" width="400"/>
+<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_equivalence.jpg" class="img-fluid" alt="" width="400"/>
 
 <img src="{{ site.baseurl }}/images/propositional_logic/qunatifiers_equivalence2.jpg" class="img-fluid" alt="" width="400"/>
 
