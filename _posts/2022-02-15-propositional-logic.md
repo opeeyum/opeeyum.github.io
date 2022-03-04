@@ -13,7 +13,7 @@ sidebar:
   - name: Argument
     key: what-is-argument
   - name: Connectors
-    key: connectors--operators  
+    key: connectors--operators
   - name: Precedence
     key: precedence-of-operators
   - name: Quantifiers
@@ -21,13 +21,17 @@ sidebar:
 ---
 
 # What is a Proposition?
+
 Any statement that is either true or false, is termed as proposition.
 
 There are two laws regarding proposition as follows:
+
 - #### Law of excluded middle
-This law states that a proposition is required to be either true or false but not both.
+
+  This law states that a proposition is required to be either true or false but not both.
 
 - #### Law of contradiction
+
   ```
   True = not False
   False = not True
@@ -35,9 +39,9 @@ This law states that a proposition is required to be either true or false but no
 
 - ### Types of proposition:
 
-  - **Atomic Proposition** :  Any proposition which cannot be further divded is termed as atomic proposition.
+  - **Atomic Proposition** : Any proposition which cannot be further divded is termed as atomic proposition.
 
-  - **Compund Proposition** :  One or more atomic proposition combined to form a compound proposition using *connectors/operators* (i.e ~, ^, v, ->, <->).
+  - **Compund Proposition** : One or more atomic proposition combined to form a compound proposition using _connectors/operators_ (i.e ~, ^, v, ->, <->).
 
   - `Note:- Both atomic and compund Proposition's are generally termed as Premises`.
 
@@ -48,11 +52,13 @@ This law states that a proposition is required to be either true or false but no
   - **Contingency** : A propositional function which is some time true and sometime false.
 
 ### Satisfiability
+
 A statement or a propsoition is said to be satisfiable if its truth table has **atleast one true value**, otherwise statement is unsatisfiable.
 
 `Clearly, Tautology and Contingency are satisfiable whereas Contradiction is unsatisfiable.`
 
 ### What is Argument?
+
 Collection of Premises on the basis of which we derive a conclusion is termed as Argument.
 
 <img src="{{ site.baseurl }}/images/propositional_logic/argurement_discrete.png" alt="" width="400"/>
@@ -184,44 +190,45 @@ Collection of Premises on the basis of which we derive a conclusion is termed as
     </tbody>
 </table>
 
-  - `P -> Q = ~p v Q | If P then Q is equal to Not P OR Q`
+- `P -> Q = ~p v Q | If P then Q is equal to Not P OR Q`
 
 - **Bidirectional operator (<->)** :
   - If sigifies if and only if (i.e iff)
   - Work as Ex-NOR of digital electronics
-<table class = "table table-dark table-sm table-bordered align-middle">
-    <thead>
-        <tr> 
-            <th scope="col">P</th>
-            <th scope="col">Q</th>
-            <th scope="col">P <-> Q</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>True</td>
-            <td>True</td>
-            <td>True</td>
-        </tr>
-        <tr>
-            <td>True</td>
-            <td>False</td>
-            <td>Flase</td>
-        </tr>
-        <tr>
-            <td>False</td>
-            <td>True</td>
-            <td>False</td>
-        </tr>
-        <tr>
-            <td>False</td>
-            <td>False</td>
-            <td>True</td>
-        </tr>
-    </tbody>
-</table>
+  <table class = "table table-dark table-sm table-bordered align-middle">
+      <thead>
+          <tr> 
+              <th scope="col">P</th>
+              <th scope="col">Q</th>
+              <th scope="col">P <-> Q</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>True</td>
+              <td>True</td>
+              <td>True</td>
+          </tr>
+          <tr>
+              <td>True</td>
+              <td>False</td>
+              <td>Flase</td>
+          </tr>
+          <tr>
+              <td>False</td>
+              <td>True</td>
+              <td>False</td>
+          </tr>
+          <tr>
+              <td>False</td>
+              <td>False</td>
+              <td>True</td>
+          </tr>
+      </tbody>
+  </table>
 
 ### Precedence of Operators
+
 <table class = "table table-info table-sm table-bordered align-middle">
     <thead>
         <tr> 
@@ -260,6 +267,7 @@ Collection of Premises on the basis of which we derive a conclusion is termed as
 </table>
 
 ### Converse, Inverse & Contrapositive
+
 <table class = "table table-info table-sm table-bordered align-middle">
     <tbody>
         <tr>
@@ -286,20 +294,22 @@ Collection of Premises on the basis of which we derive a conclusion is termed as
 </table>
 
 ### Quantifiers
+
 First we have to understand the concept of **Predicates**. One of the downside of propositonal-logic is that we cannot restrict the domain of the subject, predicate's help us to do so.
 
 **Predicate are wriitten as P(x)**, where P is the logic and x is the subject.
 
-Predicates are used alongside quantifiers to express the extent to which a predicate is true over a range(domain) of elements. 
+Predicates are used alongside quantifiers to express the extent to which a predicate is true over a range(domain) of elements.
 
 There are two types of quantifiers:
+
 1. Universal Quantifier
 2. Existential Quantifier
 
 ### Some Properties of Quantifiers
+
 <img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_equivalence.jpg" alt="" width="400"/>
 
-<img src="{{ site.baseurl }}/images/propositional_logic/qunatifiers_equivalence2.jpg" alt="" width="400"/>
+<img src="{{ site.baseurl }}/images/propositional_logic/qunatifiers_equivalence2.jpg" class="img-fluid" alt="" width="400"/>
 
-<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_negation.jpg" alt="" width="400"/>
-
+<img src="{{ site.baseurl }}/images/propositional_logic/quantifiers_negation.jpg" class="img-fluid" alt="" width="400"/>
