@@ -67,9 +67,8 @@
             
 
             <h3>Posts</h3>
-            {% for tag in site.categories %}
-            <section id="{{ tag[0] }}">
-                {% for post in tag[1] %}
+            {% for post in site.posts %}
+            <section>
                 <div class="border border-dark border-2 rounded-2 mb-2">
                 <ul >                    
                     <li><p>{{ post.date | date: "%b %d, %Y" }}</p></li>
@@ -77,7 +76,6 @@
                     <li><a href="{{ post.url }}">Read more...</a></li>                    
                 </ul>
             </div>
-             {% endfor %}
             </section>
             {% endfor %}
                        
