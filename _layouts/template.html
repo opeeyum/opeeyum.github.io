@@ -67,7 +67,7 @@
             border-radius: 5px;
         }
         @media screen and (max-width: 800px) {
-            #sidenav {width: 0;}
+            #sidenav {display: none;}
             #main {margin: 10px}
         }
     </style>
@@ -97,15 +97,17 @@
         </nav>
 
         <div id="content">
+            {% if page.sidebar %}
             <div id="sidenav">
                 <h6 style="text-align: center;"><u>Table of Content</u></h6>
                 <ul>
                     {% for item in page.sidebar %}
                     <li><a href="#{{ item.key }}">{{ item.name }}</a></li>
-                {% endfor %}
+                    {% endfor %}
                 </ul>
                 
             </div>
+            {% endif %}
               
             <div id="main" class="bg-light">
                 <h5 hidden>{{ page.date }} - Written By {{ page.author }}</h5>
