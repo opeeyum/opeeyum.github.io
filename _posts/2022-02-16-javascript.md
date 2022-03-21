@@ -30,6 +30,7 @@ sidebar:
 
 ### Comments 
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 // Single line comment or Inline comment
 
@@ -39,12 +40,15 @@ sidebar:
 
 ### Get Input
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 prompt("Enter sth: ");
 ```
 </div>
+
 ### Display Output
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 console.log("Hello World");
 ```
@@ -64,6 +68,7 @@ console.log("Hello World");
  Has function `hasOwnProperty()` to check whether particular key exists in the **Object** or not.
 
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ``` 
 const my_dict = {
     "key 1": value,
@@ -75,34 +80,35 @@ const my_dict = {
 ### Variable declaration
 There are three ways to declare a variable.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 var myname = "Op";
 let ourName = "Limited Scope";
 ```
 </div>
 
-
 - Variable declaration using `let`:
 
   Using `let` enables us **not to** override any variable within a **given scope**. 
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 {
   let var_1 = "op";
   let var_1 = "lol";
 }
-
 ```
 </div>
 
   It will raise an error, because we are trying to override the `var_1`, within local scope.
 
-`NOTE: Variable declared with **var"** and **let** can have global or local scope.`
+`NOTE: Variable declared with` **var** `and` **let** `can have global or local scope.`
 
 - Variable declaration using `const`:
 
   Value of variable declared with `const` can't be changed.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 const pi = 3.14;
 ```
@@ -111,6 +117,7 @@ const pi = 3.14;
 ### Array in JS
 - Arrays are created using `const` keyword.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 const myArray = [1, 2, 3]
 const multDimArray = [[1, 2, 3], [4, 5, 8]]
@@ -119,6 +126,7 @@ const multDimArray = [[1, 2, 3], [4, 5, 8]]
 
 - Array have length function to get the length of an array
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 console.log(myArray.length) // without parenthesis
 ```
@@ -126,6 +134,7 @@ console.log(myArray.length) // without parenthesis
 - Various other array functions:
 - `push()` - push is used to append element at end in an array.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 myArray.push(1) 
 ```
@@ -192,6 +201,7 @@ switch(1)
 ### Loops
 - Java script supports all loops (i.e for, while, and do while) having functionalty same as c/c++.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
 ```
 for(var i=0; i<10; i++)
 {
@@ -218,7 +228,7 @@ while(condition);
 </div>
 
 ### Random Numbers
-- Javascript has `Math.random()` function that genrates decimal random numbers between [0, 1).
+- Javascript has `Math.random()` function that genrates decimal random numbers between [0, 1].
 - It also has `Math.floor()` function to get the floor value of an decimal number.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 ```
