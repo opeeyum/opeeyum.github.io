@@ -68,7 +68,7 @@
 
             <h3>Posts</h3>
             {% for post in site.posts %}
-            <section>
+            <section id="{{ post.category }}">
                 <div class="border border-dark border-2 rounded-2 mb-2">
                 <ul >                    
                     <li><p>{{ post.date | date: "%b %d, %Y" }}</p></li>
