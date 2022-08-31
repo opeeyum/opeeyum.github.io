@@ -41,9 +41,9 @@ There are two laws regarding proposition as follows:
 
   - **Atomic Proposition** : Any proposition which cannot be further divded is termed as atomic proposition.
 
-  - **Compund Proposition** : One or more atomic proposition combined to form a compound proposition using _connectors/operators_ (i.e ~, ^, v, ->, <->).
+  - **Compound Proposition** : One or more atomic proposition combined to form a compound proposition using _connectors/operators_ (i.e ~, ^, v, ->, <->).
 
-  - `Note:- Both atomic and compund Proposition's are generally termed as Premises`.
+  - `Note:- Both atomic and compound Proposition's are generally termed as Premises`.
 
   - **Tautology**: A propositional function which is true in every possible case. A tautology is also termed as Valid statement.
 
