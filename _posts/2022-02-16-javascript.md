@@ -144,17 +144,6 @@ myArray.push(1)
 - `shift()` - shift is used to pop first element from the array.
 - `unshift()` - unshift is used to add element at the begining in an array.
 
-### Function's in JS
- Functions are decalared as following:
- <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
-function myFunc(para1, para2)
-{
-    //body
-}
-```
-</div>
-
 ### What is `==` in JavaScript?
 - Double equals (==) is a comparison operator, which transforms the operands having the same type before comparison.
 - So, when you compare string with a number, JavaScript converts any string to a number. 
@@ -246,6 +235,19 @@ const a = parseInt("11", 2);
 ```
 </div>
 The radix variable says that 11 is in the binary system, or base 2.
+
+### Function's in JS
+ Functions are decalared as following:
+ <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+```
+function myFunc(para1, para2)
+{
+    //body
+}
+```
+</div>
+- Functions that can be assigned to a variable, passed into another function, or returned from another function just like any other normal value, are called first class functions. In JavaScript, all functions are **First Class Functions**.
+- The functions that take a function as an argument, or return a function as a return value, are called **Higher Order Functions**.
 
 ### Ternary Operator
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
