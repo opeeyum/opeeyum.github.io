@@ -74,7 +74,7 @@
                     <li><p>{{ post.date | date: "%b %d, %Y" }}</p></li>
                     <p>{{ post.excerpt }}</p>
                     <li><a href="{{ post.url }}">Read more...</a></li> 
-                    <li>{{post.category | capitalize}}</li>                   
+                    <button type="button" class="btn btn-info">#{{post.category | capitalize}}</button>                  
                 </ul>
             </div>
             </section>
