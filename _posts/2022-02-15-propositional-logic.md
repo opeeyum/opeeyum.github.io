@@ -21,7 +21,7 @@ sidebar:
 ---
 
 # What is a Proposition?
-
+<hr>
 Any statement that is either true or false, is termed as proposition.
 
 There are two laws regarding proposition as follows:
@@ -31,8 +31,7 @@ There are two laws regarding proposition as follows:
   This law states that a proposition is required to be either true or false but not both.
 
 - #### Law of contradiction
-
-  ```
+  ```python
   True = not False
   False = not True
   ```

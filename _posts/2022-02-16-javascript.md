@@ -27,11 +27,11 @@ sidebar:
     key: ternary-operator
 ---
 # Getting started with Javascript
-
+<hr>
 ### Comments 
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 // Single line comment or Inline comment
 
 /* Multiline comment like C or CPP */
@@ -41,7 +41,7 @@ sidebar:
 ### Get Input
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 prompt("Enter sth: ");
 ```
 </div>
@@ -49,7 +49,7 @@ prompt("Enter sth: ");
 ### Display Output
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 console.log("Hello World");
 ```
 </div>
@@ -69,7 +69,7 @@ console.log("Hello World");
 
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-``` 
+```js
 const my_dict = {
     "key 1": value,
     key: "value 2",
@@ -81,7 +81,7 @@ const my_dict = {
 There are three ways to declare a variable.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 var myname = "Op";
 let ourName = "Limited Scope";
 ```
@@ -92,7 +92,7 @@ let ourName = "Limited Scope";
   Using `let` enables us **not to** override any variable within a **given scope**. 
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 {
   let var_1 = "op";
   let var_1 = "lol";
@@ -109,7 +109,7 @@ let ourName = "Limited Scope";
   Value of variable declared with `const` can't be changed.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 const pi = 3.14;
 ```
 </div>
@@ -118,7 +118,7 @@ const pi = 3.14;
 - Arrays are created using `const` keyword.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 const myArray = [1, 2, 3]
 const multDimArray = [[1, 2, 3], [4, 5, 8]]
 ```
@@ -127,7 +127,7 @@ const multDimArray = [[1, 2, 3], [4, 5, 8]]
 - Array have length function to get the length of an array
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 console.log(myArray.length) // without parenthesis
 ```
 </div>
@@ -135,7 +135,7 @@ console.log(myArray.length) // without parenthesis
 - `push()` - push is used to append element at end in an array.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 myArray.push(1) 
 ```
 </div>
@@ -143,6 +143,18 @@ myArray.push(1)
 - `pop()` - pop is used to pop element from end in an array.
 - `shift()` - shift is used to pop first element from the array.
 - `unshift()` - unshift is used to add element at the begining in an array.
+
+### Function's in JS
+ Functions are decalared as following:
+ <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
+
+```js
+function myFunc(para1, para2)
+{
+    //body
+}
+```
+</div>
 
 ### What is `==` in JavaScript?
 - Double equals (==) is a comparison operator, which transforms the operands having the same type before comparison.
@@ -158,7 +170,8 @@ myArray.push(1)
 ### If Else in JS
 - Exactly similar to C or CPP
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 if(condition)
 {
     //Body
@@ -177,7 +190,8 @@ else
 ### Switch Case
 - Exactly similar to C or CPP
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 switch(1)
 {
     case 1: ;
@@ -191,7 +205,7 @@ switch(1)
 - Java script supports all loops (i.e for, while, and do while) having functionalty same as c/c++.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
 
-```
+```js
 for(var i=0; i<10; i++)
 {
     //Body
@@ -199,7 +213,8 @@ for(var i=0; i<10; i++)
 ```
 </div>
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 while(condition)
 {
     //Body
@@ -207,7 +222,8 @@ while(condition)
 ```
 </div>
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 do
 {
     //Body
@@ -220,7 +236,8 @@ while(condition);
 - Javascript has `Math.random()` function that genrates decimal random numbers between [0, 1].
 - It also has `Math.floor()` function to get the floor value of an decimal number.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 // To generate random number within specified range
 Math.floor(Math.random()*(max-min+1))+min;
 ```
@@ -229,7 +246,8 @@ Math.floor(Math.random()*(max-min+1))+min;
 - The `parseInt()` function parses a string and returns an integer. 
 - It takes a second argument for the radix, which specifies the base of the number in the string.
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 const a = parseInt("11", 2);
 //This example converts the string 11 to an integer 3
 ```
@@ -251,7 +269,8 @@ function myFunc(para1, para2)
 
 ### Ternary Operator
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 function findGreaterOrEqual(a, b) {
     if (a === b) {
       return "a and b are equal";
@@ -267,7 +286,8 @@ function findGreaterOrEqual(a, b) {
 </div>
 The above function can be re-written using multiple conditional operators:
 <div class="bg-dark bg-gradient text-white mb-3 p-2" markdown=1>
-```
+
+```js
 function findGreaterOrEqual(a, b) {
     return (a === b) ? "a and b are equal" 
       : (a > b) ? "a is greater" 

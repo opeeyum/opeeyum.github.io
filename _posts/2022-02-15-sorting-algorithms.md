@@ -21,7 +21,7 @@ sidebar:
 ---
 
 # What is Sorting?
-
+<hr>
 Arranging all the elements of a given array/list in an ascending order is termed as sorting.
 
 Now we have various Sorting techinques to do so _(i.e sort the given array/list)_
@@ -43,6 +43,7 @@ Each of these are different sorting algorithm, with varing time and space comple
 ### Selection Sort
 
 It is one of the Greedy algorithm, in which we find minimum element in every swap.
+
 _Algorithm_:
 
 1. Start iterating through the given array form Zero to last index.
@@ -68,7 +69,7 @@ _Algorithm_:
 
 Time complexity:
 
-```
+```cpp
 o(n) -- For Best case, that is given array is already sorted in ascending order.
 o(n*n) -- For Average and worst case.
 ```
@@ -89,7 +90,7 @@ _Algorithm_:
 
 Time complexity:
 
-```
+```cpp
 o(n) -- For Best case, that is give array is already sorted in ascending order.
 o(n*n) -- For Average and worst case.
 ```
@@ -116,7 +117,7 @@ Quick sort is also an one of the divide and conquer strategy.
 
 Time complexity:
 
-```
+```cpp
 o(n*logn) -- For Best, Average.
 o(n*n) -- For worst case, when array is already sorted.
           reversed sorted or all elements are same.
